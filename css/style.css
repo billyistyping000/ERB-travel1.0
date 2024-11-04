@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: dm serif text, Arial, Helvetica, sans-serif;
+  align-items: center;
+}
+
+
+#navbarNavDropdown {
+  justify-content: flex-end;
+}
+ul.navbar-nav{
+gap: 2rem;
+}
+
+.navbar {
+ min-width: 30rem;
+}
+
+.logo {
+  animation: flash 2s infinite;
+  color: rgba(0, 0, 0, 0.616);
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  text-decoration: none;
+  font-size: 2rem;
+  width: 15rem;
+  margin-right: 1rem;
+}
+.logo .flash {
+  opacity: 0;
+}
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#logo-button {
+  border: none;
+  background-color: transparent;
+}
+
+#main-background {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  align-items: center;
+  font-size: 16px;
+  background: white;
+  margin: 5px;
+  padding: 30px;
+}
+
+#backpacker {
+  width: 845px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#locations img {
+  width: 200px;
+  object-fit: cover;
+  height: 100%;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  opacity: 0.8;
+}
+
+#locations img:hover {
+  transform: scale(1.1);
+  transition: transform 0.15s, opacity 0.15s;
+  opacity: 1;
+}
+
+#locations {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  gap: 15px;
+}
+
+.city {
+  display: flex;
+  position: absolute;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  top: 5px;
+  margin-left: 10px;
+  z-index: 1;
+  /* backdrop-filter: blur(5px); */
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+
+footer>.copyright {
+  
+  flex-direction: row;
+  justify-self: center;
+  text-align: center;
+}
+
+@media screen and (max-width:600px){
+  body {
+    width: 483px;
+  }
+
+/* Home Page */
+/*           */
+  #backpacker {
+  width: 480px;
+}
+  #locations {
+  flex-wrap: wrap-reverse;
+  flex-direction: row-reverse;
+  width: 30rem;
+  justify-content: center;
+}
+
+#main-background {
+  width: 30rem;
+}
+
+.city{
+color: rgba(255, 255, 255, 0.7);
+position: relative;
+top: 2rem;
+left: 0.5rem;
+}
+
+}
+
+#locations a{
+text-decoration: none;
+}
+
+
