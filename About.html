@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel Guide</title>
-
+    <title>Travel Guide - About</title>
+    <!-- bootstrap -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
 
@@ -23,71 +23,111 @@
     />
   </head>
   <body>
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
-      <a href="main.html" class="logo"
-        ><button id="logo-button">Travel Guide BC</button></a
-      >
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="main.html"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
+      <div class="container-fluid">
+        <a href="main.html" class="logo"
+          ><button id="logo-button">Travel Guide BC</button></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="main.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About</a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="About.html">About</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Destinations
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="Bangkok.html">Bangkok</a>
-              <a class="dropdown-item" href="HongKong.html">Hong Kong</a>
-              <a class="dropdown-item" href="new york.html">New York</a>
-              <a class="dropdown-item" href="Tokyo.html">Tokyo</a>
-            </div>
-          </li>
-        </ul>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Destinations
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="Bangkok.html">Bangkok</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="HongKong.html">Hong Kong</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="new york.html">New York</a>
+                </li>
+                <li><a class="dropdown-item" href="Tokyo.html">Tokyo</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <br /><br /><br />
-    <strong>This website is gooooooooooood.</strong>
+    <!-- //navbar -->
 
-    <footer>2024 copyright //// Designed by Billy Chau</footer>
+    <article class="aboutus">
+      <img src="img/travel_backpacker.png" alt="" width="550px" />
+      <h2>Our Purpose</h2>
+      <p>
+        Travel is more than just visiting tourist spots – it's about
+        experiencing local life and feeling the pulse of a city. We created this
+        platform to provide practical travel insights and local recommendations
+        for those planning to explore Hong Kong, Tokyo, Bangkok, and New York,
+        delivering information in an accessible and meaningful way.
+      </p>
+
+      <h2>What We Offer</h2>
+      <p>
+        • Curated City Guides In-depth analysis of each city's unique
+        characteristics, covering everything from culture and cuisine to
+        entertainment. <br />
+        • Local Perspectives Moving beyond conventional guidebooks, we share
+        unique urban stories from a local point of view. <br />• Practical
+        Information Compilation of up-to-date, useful travel information to help
+        you plan your perfect journey.
+      </p>
+
+      <h2>Why These Cities</h2>
+      <p>
+        We've carefully selected four iconic global metropolises: <br />Hong
+        Kong: Where East meets West in perfect harmony <br />Tokyo: A modern
+        city where tradition and innovation coexist <br />Bangkok: The delicate
+        balance of ancient culture and modern living <br />New York: The city
+        that never sleeps, where world cultures converge Each city possesses its
+        own unique charm, and through our detailed guides, we aim to help you
+        discover their most captivating aspects.
+      </p>
+    </article>
+    <footer class="footer">
+      <button id="backtotop-button">- Back to Top -</button>
+
+      <p class="copyright">2024 copyright //// Designed by Billy Chau</p>
+    </footer>
+
+    <!-- bootstrap buddle -->
+
     <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

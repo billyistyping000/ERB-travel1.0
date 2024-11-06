@@ -8,16 +8,15 @@ body {
   align-items: center;
 }
 
-
 #navbarNavDropdown {
   justify-content: flex-end;
 }
-ul.navbar-nav{
-gap: 2rem;
+ul.navbar-nav {
+  gap: 2rem;
 }
 
 .navbar {
- min-width: 30rem;
+  min-width: 30rem;
 }
 
 .logo {
@@ -113,45 +112,44 @@ footer {
   margin-bottom: 15vh;
 }
 
-footer>.copyright {
-  
+footer > .copyright {
   flex-direction: row;
   justify-self: center;
   text-align: center;
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width: 768px) {
   body {
-    width: 483px;
+    width: 700px;
   }
 
-/* Home Page */
-/*           */
+  .navbar {
+    min-width: 500px;
+  }
+  /* Home Page */
+  /*           */
   #backpacker {
-  width: 480px;
-}
+    width: 480px;
+  }
   #locations {
-  flex-wrap: wrap-reverse;
-  flex-direction: row-reverse;
-  width: 30rem;
-  justify-content: center;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+    width: 30rem;
+    justify-content: center;
+  }
+
+  #main-background {
+    width: 30rem;
+  }
+
+  .city {
+    color: rgba(255, 255, 255, 0.7);
+    position: relative;
+    top: 2rem;
+    left: 0.5rem;
+  }
 }
 
-#main-background {
-  width: 30rem;
+#locations a {
+  text-decoration: none;
 }
-
-.city{
-color: rgba(255, 255, 255, 0.7);
-position: relative;
-top: 2rem;
-left: 0.5rem;
-}
-
-}
-
-#locations a{
-text-decoration: none;
-}
-
-
